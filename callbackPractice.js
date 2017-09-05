@@ -65,7 +65,7 @@ multiply(4, 3, function(answer){
 
   //Code Here
 
-
+var contains = (arr, name, callback) => arr.includes(name) ? callback(true) : callback(false);
 
 
 contains(names, 'Colt', function(result){
