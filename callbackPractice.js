@@ -119,7 +119,13 @@ each(names, function(item, indice){
 
 // Code here
 
-
+var getUserById = (arr, id, cb) => {
+  for(unit in arr) {
+    if(arr[unit].id === id) {
+      return cb(arr[unit]);
+    }
+  }
+}
 
 var users = [
   {
